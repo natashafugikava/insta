@@ -14,7 +14,7 @@ if b < 0 and c > 0:
   st.write(f'A equação é {a}x² - {abs(b)}x + {c}.')
 if b < 0 and c < 0:
   st.write(f'A equação é {a}x² - {abs(b)}x - {abs(c)}.')
-if b = 0 and c > 0:
+if b == 0 and c > 0:
   st.write(f'A equação é {a}x² + {c}.')
 if b == 0 and c < 0:
   st.write(f'A equação é {a}x² - {abs(c)}.')
