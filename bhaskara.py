@@ -7,7 +7,7 @@ b = st.number_input('Digite o valor de b:', value=-5)
 c = st.number_input('Digite o valor de c:', value=6)
 
 if b > 0 and c > 0:
-  st.write(f'A equação é {a}x² + bc + c.')
+  st.write(f'A equação é {a}x² + {b}x + {c}.')
 
 delta = b**2 - 4*a*c
 try:
