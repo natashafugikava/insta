@@ -8,6 +8,20 @@ c = st.number_input('Digite o valor de c:', value=6)
 
 if b > 0 and c > 0:
   st.write(f'A equação é {a}x² + {b}x + {c}.')
+if b > 0 and c < 0:
+  st.write(f'A equação é {a}x² + {b}x - {abs(c)}.')
+if b < 0 and c > 0:
+  st.write(f'A equação é {a}x² - {abs(b)}x + {c}.')
+if b < 0 and c < 0:
+  st.write(f'A equação é {a}x² - {abs(b)}x - {abs(c)}.')
+if b = 0 and c > 0:
+  st.write(f'A equação é {a}x² + {c}.')
+if b == 0 and c < 0:
+  st.write(f'A equação é {a}x² - {abs(c)}.')
+if b > 0 and c == 0:
+  st.write(f'A equação é {a}x² + {b}x.')
+if b < 0 and c == 0:
+  st.write(f'A equação é {a}x² - {abs(b)}x.')
 
 delta = b**2 - 4*a*c
 try:
@@ -21,4 +35,4 @@ try:
   else:
     st.write('A equação não possui raízes reais.')
 except:
-  st.write('O valor de a não pode ser zero!')
+  st.write('Insira valores possíveis!')
