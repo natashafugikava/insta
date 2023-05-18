@@ -7,21 +7,23 @@ b = st.number_input('Digite o valor de b:', value=-5)
 c = st.number_input('Digite o valor de c:', value=6)
 
 if b > 0 and c > 0:
-  st.write(f'A equação é {a}x² + {b}x + {c}.')
+  st.write(f'A equação é {a}x² + {b}x + {c} = 0.')
 if b > 0 and c < 0:
-  st.write(f'A equação é {a}x² + {b}x - {abs(c)}.')
+  st.write(f'A equação é {a}x² + {b}x - {abs(c)} = 0.')
 if b < 0 and c > 0:
-  st.write(f'A equação é {a}x² - {abs(b)}x + {c}.')
+  st.write(f'A equação é {a}x² - {abs(b)}x + {c} = 0.')
 if b < 0 and c < 0:
-  st.write(f'A equação é {a}x² - {abs(b)}x - {abs(c)}.')
+  st.write(f'A equação é {a}x² - {abs(b)}x - {abs(c)} = 0.')
 if b == 0 and c > 0:
-  st.write(f'A equação é {a}x² + {c}.')
+  st.write(f'A equação é {a}x² + {c} = 0.')
 if b == 0 and c < 0:
-  st.write(f'A equação é {a}x² - {abs(c)}.')
+  st.write(f'A equação é {a}x² - {abs(c)} = 0.')
 if b > 0 and c == 0:
-  st.write(f'A equação é {a}x² + {b}x.')
+  st.write(f'A equação é {a}x² + {b}x = 0.')
 if b < 0 and c == 0:
-  st.write(f'A equação é {a}x² - {abs(b)}x.')
+  st.write(f'A equação é {a}x² - {abs(b)}x = 0.')
+if b == 0 and c == 0:
+  st.write(f'A equação é {a}x² = 0.')
 
 delta = b**2 - 4*a*c
 try:
